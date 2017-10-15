@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en-us">
+ 
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Test a Perceptual Phenomenon</h1>
+      <h2 class="project-tagline">Udacity Machine Learning Foundation Nanodegree </h2>
+      <h3 class="project-tagline">Project 2</h3> 
+    </section>
+
+    <section class="main-content">
+    <p>In this project, we will help to investigate a classic phenomenon from experimental psychology called the "Stroop Effect" by creating a hypothesis, regarding the outcome of the task. We will then also look at some data collected from others who have performed the same task and compute some statistics describing the results. Finally, we will interpret your results in terms of your hypotheses.</p>
+    <a href="https://github.com/guri11/Udacity_project2/blob/master/stroopdata.csv"><div class="btn" style="color: blue">Download Data</div></a>
+      <h3>
+<a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>1. What is our independent variable? What is our dependent variable?</h3>
+
+<p>Independent variable: the words condition (congruent words or incongruent words)</p>
+<p>Dependent variable: the time it takes to name the ink colors in equally-sized lists</p>
+
+<h3>
+<a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>2. What is an appropriate set of hypotheses for this task? What kind of statistical test do you expect to perform? Justify your choices.</h3>
+
+<div>
+  <img src="congruent_distribution.png" alt="congruent distribution">
+  <img src="incongruent_distribution.png" alt="incongruent distribution">
+</div>
+
+<p>H0: the population mean response time is the same for both condition</p>
+<p>HA: the population mean response time in each condition is different</p>
+In other words: 
+<div class="jumbotron">
+  H0: µ1 = µ2
+  <br>HA: µ1 ≠ µ2
+</div>
+
+<p>The appropriatae statistical test we're going to use here is " T-Distribution (two tailed)" because of the following:</p>
+  <p>1. Sample size very samll(n=24) which is less than 30.</p>
+  <p>2. Comprising 2 dependent samples of data.</p>
+  <p>3. It is normally distributed.</p>
+
+<h3>
+<a id="creating-pages-manually" class="anchor" href="#creating-pages-manually" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>3. Report some descriptive statistics regarding this dataset. Include at least one measure of central tendency and at least one measure of variability.</h3>
+
+<div>
+  <header style="font-weight: bold">Congruent</header>
+  <ul class="well">
+    <li>Mean: 14.051</li>
+    <li>Standard Deviation: 3.559</li>
+  </ul>
+  <header style="font-weight: bold">Incongruent</header>
+  <ul class="well">
+    <li>Mean: 22.016</li>
+    <li>Standard Deviation: 4.797</li>
+  </ul>
+</p>
+
+<h3>
+<a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>4. Provide one or two visualizations that show the distribution of the sample data. Write one or two sentences noting what you observe about the plot or plots.</h3>
+
+<img src="congruent_and_incongruent.png" alt="Incongruent and Congruent">
+<p>The time it takes to name the ink colors in incongruent condition is longer than that of congruent condition</p>
+
+<h3>
+<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>5. What is your confidence level and your critical statistic value? Do you reject the null hypothesis or fail to reject it? Come to a conclusion in terms of the experiment task. Did the results match up with your expectations?</h3>
+
+<p>
+  <ul>
+    <li>Confidence Interval: lower limit = -10.01,upper limit = 2.1</li>
+    <li>t critical value: 2.07</li>
+    <li>t statistics: 8.02</li>
+  </ul>
+  Our t statistics is greater than t critical value, so we reject the null hypotheses. We conclude that the congruent/incongruent condition does affect the time it takes to name the ink colors.
+</p>
+
+<div class="container">
+	<h5>Author: Gurinder Kalsi</h5>
+	<h5>Date: October 16, 2017</h5>
+      
+   
+  
+  </body>
+</html>
